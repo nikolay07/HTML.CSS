@@ -1,3 +1,16 @@
+div.container>div:nth-child(1) {
+    display: none;
+}
+
+div.container>div:nth-child(2) {
+    visibility: hidden;
+}
+
+div.container>div:nth-child(3) {
+    visibility: visible;
+}
+
+
 /*Display and visibility
  HTML_CSS  Урок 11. Display, Visibility
 Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. Для добавления стилей используйте styles.css
