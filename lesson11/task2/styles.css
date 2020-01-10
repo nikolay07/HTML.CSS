@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.articles {
+    display: flex;
+}
+
+div.articles>div {
+    width: 150px;
+    height: 100px;
+    margin: 16px;
+    background-color: beige;
+}
+
+.visible-text {
+    overflow: none;
+}
+
+.cropped {
+    overflow: hidden;
+}
+
+.both-scrolls {
+    overflow: scroll;
+    cursor: all-scroll;
+}
+
+.vertical-scroll {
+    overflow: auto;
+    cursor: all-scroll;
+}
+
+
+/*
+Overflow
+ Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным.
+Для добавления стилей используйте styles.css
+Результат должен быть как на картинке картинке
+Задайте всем <div> высоту 100px и ширину 150px. Цвет фона - beige, внешние отступы 16px. Разместите их в одну строку.
+Не забудьте про box-sizing, чтобы правильно отсчитывать ширину элементов
+<div> с классом .visible-text не должен как-либо обрезать текст (весь текст виден)
+<div> с классом .cropped должен обрезать текст, что не поместился без возможности скроллить.
+<div> с классом .both-scrolls должен обрезать текст, что не поместился. При этом должны появиться оба скролла.
+<div> с классом .vertical-scroll должен обрезать текст, что не поместился. Появиться должен тольк вертикальный скролл.
+Всем <div> со скроллом задайте курсор all-scroll
+*/
