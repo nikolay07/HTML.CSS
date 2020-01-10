@@ -1,0 +1,41 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ .hoverme {
+     border-bottom: 1px dotted black;
+     position: relative;
+     margin: 16px;
+     display: inline-block;
+ }
+ 
+ .tooltip {
+     background-color: grey;
+     color: white;
+     display: none;
+     border-radius: 4px;
+     padding: 8px;
+     position: absolute;
+     bottom: -40px;
+     left: 0;
+ }
+ 
+ .hoverme:hover .tooltip {
+     display: block;
+ }
+ /*
+Tooltip
+ 
+Создайте тултип, который будет появляться при наведении курсора мыши на текст.
+
+Результат должен быть как на картинке картинке
+
+Основные требования:
++Нормализируйте Css
++Тултип сделайте тегом <span> а основной текст тегом <div>
+Сделайте внешний отступ для текста 16px. Добавьте нижнее подчеркивание 1px dotted black. 
+Обратите внимание на ширину текста.
+Тултип должен иметь grey фон, 4px радиус границы, внутренние отступы 8px, отступать вниз от 
+текста Hover over me (bottom: -40px;)
+Дополнительно добавьте основному тексту атрибут title="I'm a title text". 
+При наведении на текст браузер должен показать этот title*/
