@@ -1,0 +1,99 @@
+    .header {
+        background-color: darkturquoise;
+        height: 40px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .nvigation {
+        line-height: 40px;
+    }
+    
+    .nav-list {
+        margin: 0;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-left: 16px;
+        color: white;
+    }
+    
+    .content {
+        background-color: beige;
+        height: 5000px;
+    }
+    
+    .head {
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        margin: auto;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .ear {
+        background-color: brown;
+        height: 60px;
+        width: 40px;
+    }
+    
+    .ear.ear_right {
+        position: absolute;
+        top: -60px;
+        right: -40px;
+    }
+    
+    .ear.ear_left {
+        position: absolute;
+        top: -60px;
+        left: -40px;
+    }
+    
+    .eye {
+        background-color: grey;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .eye.eye_right {
+        position: absolute;
+        top: 80px;
+        right: 40px;
+    }
+    
+    .eye.eye_left {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+    }
+    /*
+Позиционирование
+
+Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. 
+Для добавления стилей используйте styles.css
+
+Задача - нарисовать медведя :)
+
+Нормализуйте стили
+Добавьте хедер (цвет фона darkturquoise), высота которого 40px. 
+В него поместите тег <nav> с ненумерованным списком (элементы: Home, Products, Contacts)
+Добавьте хедер, высота которого 40px. В него поместите тег <nav> с ненумерованным 
+списком (элементы: Home, Products, Contacts)
+Расположите элементы навигации по горизонтали и отцентрируйте их по вертикали. 
+Дайте им внешний отступ слева 16px и белый цвет шрифта.
+Добавьте <main> (цвет фона beige) с высотой 5000px
+Добавьте медведя (смотрите прикрепленный скриншот для примера)
+
+Голова 200х200px расположена по цетру экрана. Цвет фона - aquamarine
+Уши 40х60px, цвет brown
+Глаза 30px в диаметре, цвет grey. Расположены: 80px отступ сверху, 40px по бокам
+Убедитесь, что хедер приклеен к верху страницы и не скролится с телом документа. 
+При скроле медведь должен прятаться под хедер.
+*/

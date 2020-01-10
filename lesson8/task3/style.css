@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.rectangle {
+    background-color: forestgreen;
+    width: 100px;
+    height: 50px;
+    padding: 0px;
+    margin: 50px;
+    border-radius: 16px;
+}
+
+.oval {
+    background-color: darkmagenta;
+    width: 100px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 50%;
+}
+
+.circus {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 90%;
+}
+
+.triangle {
+    height: 50px;
+    width: 100px;
+    margin: 0px 50px 0px 50px;
+    padding: 0px;
+    border: 50px solid transparent;
+    border-top-color: brown;
+}
