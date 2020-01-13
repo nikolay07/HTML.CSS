@@ -1,0 +1,50 @@
+.image {
+    max-width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-button {
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 100px);
+    cursor: pointer;
+}
+
+.image-button:hover {
+    opacity: 1;
+}
+
+
+/*Img тег (again)
+ 
+Визуализация задания в файле example.png
+
+Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. 
+Для добавления стилей используйте styles.css
+
+Блок с надписью Later I'll do something разместите ровно по центру картинки. 
+А картинку отцентрируйте по горизонтали
+Картинка не должна растягиваться больше своей оригинальной ширины. 
+Но должна сжиматься, если не помещается на экран по ширине.
+Стили карточки с надписью
+ширина - 200px, высота - 50px
+Цвет фона - bisque;
+шрифт - 12px в uppercase, насыщенность - 700
+карточка должна быть полупрозрачной (opacity: 0.5;) по умолчанию, но менять opacity на 1 при наведении курсора. 
+Курсором установите pointer
+Добавьте картинке описание в атрибут alt (текст на ваше усмотрение). Не забываем, что это обязательный атрибут.*/
