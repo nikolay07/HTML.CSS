@@ -1,9 +1,11 @@
 html {
     font-family: Verdana;
+    box-sizing: border-box;
 }
 
 h1 {
     font-size: 74px;
+    text-align: center;
     margin: 16px auto;
     overflow: hidden;
     white-space: nowrap;
