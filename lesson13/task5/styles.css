@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/background.jpg);
+    background-repeat: repeat;
+}
+
+
+/*
+Заполнение с повторением
+ 
+Используйте текстуру background.jpg для заполнения фона тела документа
+
+Результат должен быть, как на картинке example.jpg
+
+Основные требования:
+Установите <body> повторяющуюся картинку как фон
+Это все ;)
+А, и стили не забудьте нормализовать
+*/
