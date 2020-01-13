@@ -1,11 +1,11 @@
-.image {
-    max-width: 100%;
-}
-
 .image-container {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.image {
+    max-width: 100%;
 }
 
 .image-button {
