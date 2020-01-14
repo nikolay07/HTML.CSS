@@ -1,19 +1,24 @@
-.image-container {
-    display: flex;
-    border: 1px solid grey;
-    background-color: bisque;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+div {
+    margin: 16px;
 }
 
-.image {
-    border: 1px solid red;
-    background-color: rosybrown;
-}
 
-.image-button {
-    position: absolute;
-    border: 1px solid green;
-    background-color: greenyellow;
-}
+/*
+Форма с несколькими инпутами
+ 
+Создайте простую форму
+
+Визуализация задания в файле example.jpg
+
+Основные требования:
+Нормализуйте стили
+Добавьте сдедующие контролы в форму. Элементы форм являются строчными, оберните каждый контрол в <div>, чтобы каждый занимал отдельную строку. Дивам дайте внешний отступ 16px.
+
+Текстовый инпут с именем lastName и значением Emerson
+Инпут type="number" с именем age и значением 17
+Чекбокс с именем agree и текстом Accept terms and conditions
+Радиокнопки с именем gender и опциями Male, Female, Secret. div с радиокнопками обозначте классом .choose-gender
+Textarea с именем description и плейсхолдером Write description...
+Добавьте кнопку с типом submit и текстом Submit
+
+*/
