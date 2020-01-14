@@ -1,0 +1,19 @@
+.image-container {
+    display: flex;
+    border: 1px solid grey;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image {
+    border: 1px solid red;
+    background-color: rosybrown;
+}
+
+.image-button {
+    position: absolute;
+    border: 1px solid green;
+    background-color: greenyellow;
+}
