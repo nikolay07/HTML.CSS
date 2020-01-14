@@ -1,0 +1,51 @@
+.page__form {
+    margin: 32px;
+}
+
+.page__form__input {
+    margin: 8px;
+}
+
+.languages input {
+    margin: 0;
+}
+
+
+/*
+Практика с формамиПоследнее обновление: 11 января 2019 09:46
+ 
+Визуализация задания в файле example.jpg
+
+Добавьте на страницу форму с перечисленными ниже инпутами. Пусть каждый инпут занимает отдельную строку
+
+Основные требования:
+Нормализуйте стили
+Для формы задайте внешние отступы 32px, а для инпутов - 8px.
+Текстовы инпут с именем primaryLanguage значением HTML. Должен быть disabled
+Чекбокс с именем agree. Не активен
+Чекбокс с именем like. Активен и доступен только для чтения
+Инпут для цвета с именем favouriteColor и значением #ff7f50
+date инпут с именем birthDate и значением 2021-01-02
+datetime-local инпут с именем birthTime и значением 2024-10-04T13:02
+email инпут с именем email и плейсхолдером example@domain.com. Поле обязательное
+file инпут с именем avatar
+month инпут с именем startLearning и значением 2020-01
+number инпут с именем favouriteNumber и значением 17
+textarea с именем story, у которой 5 строк по 30 символов и плейсхолдер "A long time ago..."
+Поле для ввода пароля с именем password и значением secret
+Радиокнопки с именем language и опциями
+значение - html и текстом HTML
+значение - сss и текстом CSS Выбран
+значение - javascript и текстом JavaScript
+Радиокнопки оберните в элемент с классом languages
+Поле range с именем learningProgress и значением 30
+Select с именем framework и опциями
+значение - react и текстом React
+значение - jquery и текстом jQuery Выбран
+значение - bootstrap и текстом Bootstrap
+search инпут с именем search и плейсхолдером "Type first letters..."
+time инпут с именем lunchEnd и значением 14:01
+url инпут с именем website и плейсхолдером https://website.com. Обязательно для заполнения
+week инпут с именем birthWeek и значением 2021-W51
+Submit кнопка с текстом Save
+*/
