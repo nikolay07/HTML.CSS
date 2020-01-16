@@ -1,0 +1,58 @@
+.block {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    background-color: coral;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    animation: move 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes move {
+    0% {
+        top: -100px;
+        left: calc(50vw - 100px);
+    }
+    100% {
+        top: calc(50vh - 50px);
+        left: calc(50vw - 100px);
+    }
+}
+
+
+/*Выпадающий блок
+ 
+Добавьте на страницу блок, который плавно появляется с верхнего края экрана - модальное окно.
+
+Визуализация задания в файле example.png
+
+Начальный HTML код находится в редакторе ниже. Его можно модифицировать. 
+Для добавления стилей используйте styles.css
+
+Основные требования:
+Тексту в блоке:
+
+Шрифт - Arial, Helvetica, sans-serif
+Размер шрифта - 14px
+Насыщенность шрифта - 700
+Цвет шрифта - white
+в верхнем регистре
+по центру блока
+Блоку задайте:
+
+Ширину 200px, высоту - 100px
+Радиусы углов 10px
+Цвет фона coral
+Расположение в центре по горизонтали
+задайте шрифт
+Блок должен анимировать свойство top от -100px до середины экрана calc(50vh - 50px). 
+Длительность анимации - 2s. Анимация описывается функцией ease
+Блок должен остаться в своем конечном положении после анимации (свойство animation-fill-mode)*/
