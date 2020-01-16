@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spinner {
+    position: relative;
+}
+
+.spinner-text {
+    font-size: 16px;
+    font-family: monospace;
+    text-transform: uppercase;
+    animation: blinking 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.rect {
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000;
+    animation: moving 2s, blinking 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+/*
+Индикатор загрузки
+
+Разместите по центру страницы анимированный индикатор загрузки
+
+Визуализация задания в файле example.png
+
+Начальный HTML код находится в редакторе ниже. Его можно модифицировать. 
+Для добавления стилей используйте styles.css
+
+Основные требования:
+Используя Flexbox разместите .spinner по центру экрана (помним про величины vh, vw)
+Тексту спиннера задайте шрифт monospace, размер шрифиа 16px и верхний регистр
+Установите тексту анимацию blinking c интервалом 2s и бесконечными повторениями
+Установите тексту анимацию blinking c интервалом 2s и бесконечными повторениями и линейным изменением
+Квадратик под текстом должен быть черного цвета, 10px в ширину и 4px в высоту, с радиусом углов 2px
+Задайте ему обе анимации - moving и blinking. По горизонтали он должен анимировать сначала вправо, 
+потом перемещаться влево. Длительность анимации 2s бесконечное к-во повторений
+*/
