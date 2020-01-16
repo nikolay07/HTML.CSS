@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .battery {
     display: flex;
     justify-content: space-around;
