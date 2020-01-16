@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.fancy-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background-image: linear-gradient(45deg, yellow, red);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    animation: jump 0.5s 0.4s ease-in-out, rotate 0.5s ease-in-out, hide 1s 2s ease forwards;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(2000px);
+    }
+}
+
+
+/*
+Анимации с задержкой
+ 
+Добавим кнопку, для которой будет задано несколько последовательных трансформация и анимаций
+
+Визуализация задания в файле example.png
+
+Начальный HTML код находится в редакторе ниже. Его можно модифицировать. 
+Для добавления стилей используйте styles.css
+
+Основные требования:
+Нормализуйте стили
+Кнопке задайте ширину 150px, высоту - 50px, радиус углов - 4px. 
+Фон - линейный градиент от желтого до красного под 45 градусов. Уберите границу
+Текст кнопки белый, в верхнем регистре, насыщенность 700. Шрифт - Arial, Helvetica, sans-serif
+Траэктория движения - квадрат 300х300px.
+Анимации
+
+прыжок с задержкой на 0.4s на 40px верх и обратно за 0.5s (ease-in-out)
+поворот на 360 градусов за 0.5s без задержки (ease-in-out)
+смещение далеко вправо (2000px) за 1s через 2s после открытия страницы (ease). Безвозвратно =)
+
+*/
