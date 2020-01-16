@@ -1,0 +1,57 @@
+.some-button {
+    margin: 64px;
+    width: 200px;
+    height: 50px;
+    background-color: coral;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.some-button:hover {
+    color: darkcyan;
+}
+
+.bird {
+    width: 32px;
+    height: 32px;
+    fill: white;
+    vertical-align: middle;
+}
+
+.bird:hover {
+    fill: green;
+}
+
+
+/*
+Используем как иконку - часть 1
+ 
+Визуализация задания в файле example.png
+
+Будьте внимательны с версией Font Awesome. Следите, чтобы документация и подключаемая версия совпадали
+
+Основные требования:
+Нормализуйте стили
+Добавьте на страницу иконки Font Awesome. Ccылку для подключения ищите здесь
+Добавьте две кнопки. Каждой дайте внешний отступ 64px. Задайте стили:
+
+Ширина - 200px, высота - 50px
+Содержимое кнопки должно располагаться по центру. Здесь постарайтесь обойтись без Flebox
+Цвет фона - coral, цвет шрифта - white
+Радиус углов - 4px
+Текст трансформируйте в заглавные буквы. Шрифт - 'Courier New', Courier, monospace;. Насыщенность шрифта - 700
+Уберите с кнопки обводку и границу
+Задайте курсор - pointer
+При наведении миши цвет текста должен меняться на darkcyan
+В первую кнопку добавьте svg из файла bird.svg. Задайте иконке размеры 32x32 px. Закрасьте в белый цвет. 
+Убедитесь, что она отцентрирована по вертикали. При наведении мыши иконка должна становиться цвета green
+После иконки следует текст Catch the bird
+Во второй кнопке должен быть текст Create account перед которым иконка fa-id-card из Font Awesome библиотеки
+*/
