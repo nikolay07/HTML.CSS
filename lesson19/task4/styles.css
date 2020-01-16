@@ -8,21 +8,23 @@
     width: 200px;
     height: 100px;
     border-radius: 10px;
-    text-align: center;
-    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     animation: move 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
-    left: calc(50vw - 100px);
 }
 
 @keyframes move {
     0% {
         top: -100px;
+        left: calc(50vw - 100px);
     }
     100% {
         top: calc(50vh - 50px);
+        left: calc(50vw - 100px);
     }
 }
 
