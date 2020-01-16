@@ -5,8 +5,8 @@
 .column {
     display: flex;
     flex-direction: column;
-    flex: 1;
     align-items: center;
+    flex: 1;
 }
 
 .small-bird {
