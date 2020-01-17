@@ -1,4 +1,8 @@
-.main {
+* {
+    box-sizing: border-box;
+}
+
+.content {
     display: flex;
     min-height: 100vh;
 }
@@ -6,25 +10,26 @@
 .gallery {
     display: flex;
     width: 80%;
-    background-color: coral;
+    background-color: #fa5;
 }
 
 .ideas {
     display: flex;
     width: 20%;
-    background-color: aqua;
+    background-color: #5af;
 }
 
-.main-imagr {
+.image {
     max-width: 100%;
     margin: auto;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .idea {
     font-size: 24px;
     text-transform: uppercase;
     padding: 4px;
-    color: white;
+    color: #fff;
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
