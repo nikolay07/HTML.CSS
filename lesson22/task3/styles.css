@@ -6,7 +6,10 @@ main {
     display: flex;
 }
 
-picture {
+img {
     max-width: 100%;
+}
+
+picture {
     margin: auto;
 }
