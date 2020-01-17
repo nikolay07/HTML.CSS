@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spinner {
+    position: relative;
+}
+
+.spinner-text {
+    font-size: 16px;
+    font-family: monospace;
+    text-transform: uppercase;
+    animation: blinking 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 4px solid lightgrey;
+    border-top: 4px solid black;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    animation: rotate 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Индикатор загрузки
+ 
+Добавьте в центре страницы индикатор загрузки
+Визуализация задания в файле example.png
+
+Начальный HTML код находится в редакторе ниже. Его можно модифицировать. 
+Для добавления стилей используйте styles.css
+
+Основные требования:
+Используя Flexbox разместите .spinner по центру экрана (помним про величины vh, vw)
+Тексту спиннера задайте шрифт monospace, размер шрифиа 16px и верхний регистр
+Установите тексту анимацию blinking (изменение прозрачности 1 на 0%, 0 на 50%, 1 на 100%) 
+c интервалом 2s и бесконечными повторениями
+Установите тексту анимацию blinking c интервалом 2s и бесконечными повторениями и линейным изменением
+Крутящиеся кольцо:
+
+50x50px, помним про box-sizing
+Граница - 4px, lightgrey со всех сторон, сверху - black
+Отступ снизу - 8px
+Анимация - линейная и интервалом 2s. Используйте соответствующую трансформацию*/
