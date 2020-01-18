@@ -14,8 +14,7 @@ body {
 
 .header {
     height: 3em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     background-color: #eee;
     display: flex;
     align-items: center;
@@ -32,6 +31,7 @@ body {
     background-color: none;
     margin: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .main {
@@ -41,6 +41,8 @@ body {
 .navigation {
     width: 20%;
     display: inline-block;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
 }
 
 .nav-list {
