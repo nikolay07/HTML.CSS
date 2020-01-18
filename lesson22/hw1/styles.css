@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    height: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.button {
+    padding: 0;
+    border: none;
+    background-color: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+}
+
+.navigation {
+    width: 20%;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list-item {
+    background-color: #808080;
+    color: white;
+    line-height: 2em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list-link {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 599px) {
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+}
+
+
+/*
+Нужно создать меню сайта, которое на больших экранах будет отображаться в виде боковой панели, 
+а на маленьких - в виде иконки в хедере
+
+Основные требования:
+Как всегда, не забываем про box-sizing и нормализацию стилей
+Подключите на страницу иконки Font Awesome 5. Обратите внимание, что нужно выбрать полный пакет
+Элементу <html> задайте шрифт Arial, Helvetica, sans-serif и размер шрифта 16px
+Хедеру дайте высоту 3em, внутренние отступы по бокам - 1em, цвет фона - #eee
+В хедер добавьте кнопку, а в кнопку - Font Awesome (5 версии) иконку fa-bars. 
+Икона должна иметь размер шрифта 2em. У кнопки уберите внутренние отступы, обводку, границу и фон. 
+Задайте курсор pointer и отцентрируйте в хедере по вертикали
+Из списка в навигации уберите стандартные paddings и точки перед элементами списка. 
+Навигация должна занимать 20% ширины страницы
+Каждый элемент списка имеет #808080 цвет фона, белый шрифт и высоту 2em. Отступ между элементами меню - 0.5em.
+Ссылка должна занимать весь! элемент навигации. Текст ссылки должен отступать от края элемента на 0.5em.
+Ссылка должна быть без стандартного подчеркивания и белого цвета.
+При уменьшении ширины текст ссылки не должен выходить за границы элемента меню и в конце должно появляться троеточие
+Иконка в хедере должна отображаться при ширине экрана до 600px, а боковое меню при этом быть скрытым.
+ При ширине экрана 600px и больше - иконку спрятать, а боковое меню отобразить*/
