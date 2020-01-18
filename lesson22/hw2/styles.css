@@ -9,20 +9,19 @@
         }
         
         body {
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             height: 100vh;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .header {
-            background: linear-gradient(60deg, red, orange);
-            overflow: hidden;
+            background-image: linear-gradient(60deg, red, orange);
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 0 0 auto;
+            width: 100%;
         }
         
         .header h1 {
@@ -31,25 +30,27 @@
         
         .main {
             display: flex;
-            flex: 1 0 auto;
+            margin-bottom: auto;
+            flex-direction: column;
+            justify-content: center;
         }
         
         .newpicture {
             margin: auto;
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
         }
         
         img {
             max-width: 100%;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
         }
         
         .navigation {
-            width: 20%;
+            width: 100%;
             padding: 0.5em;
         }
         
         .section {
-            width: 60%;
+            width: 100%;
             font-size: 1.25em;
             padding: 0.5em;
         }
@@ -95,7 +96,7 @@
         }
         
         .news {
-            width: 20%;
+            width: 100%;
             padding: 0.5em;
         }
         
@@ -103,7 +104,7 @@
             background-color: #e5e5e5;
             padding: 0.5em;
             text-align: center;
-            flex: 0 0 auto;
+            width: 100%;
         }
         
         @media screen and (max-width: 600px) {
@@ -117,7 +118,7 @@
             }
         }
         
-        @media screen and (max-width: 900px) {
+        @media screen and (min-width: 900px) {
             .main {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -126,10 +127,10 @@
                 width: 20%;
             }
             .section {
-                width: 80%;
+                width: 60%;
             }
             .news {
-                width: 100%;
+                width: 20%;
             }
         }
         /*Основные требования:
