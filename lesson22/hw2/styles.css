@@ -1,0 +1,147 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(60deg, red, orange);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+        }
+        
+        .header h1 {
+            color: white;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1 0 auto;
+        }
+        
+        .newpicture {
+            display: flex;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        picture {
+            margin: auto;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .navigation {
+            width: 20%;
+            padding: 0.5em;
+        }
+        
+        .section {
+            width: 60%;
+            font-size: 1.25em;
+            padding: 0.5em;
+        }
+        
+        .section__header {
+            font-size: 5vw;
+            text-align: center;
+        }
+        
+        .units-list {
+            line-height: 1.75em;
+        }
+        
+        .nav-list {
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .nav-list-item {
+            background-color: #808080;
+            height: 2em;
+            line-height: 2em;
+            margin-bottom: 0.5em;
+        }
+        
+        .nav-list-link {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            display: inline-block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        .css-units {
+            color: #8b0000;
+            background-color: #e5e5e5;
+            font-size: 1.125em;
+            font-weight: 700;
+        }
+        
+        .news {
+            width: 20%;
+            padding: 0.5em;
+        }
+        
+        .footer {
+            background-color: #e5e5e5;
+            padding: 0.5em;
+            text-align: center;
+            flex: 0 0 auto;
+        }
+        
+        @media screen and (max-width: 599px) {
+            main {
+                flex-direction: column;
+            }
+            .navigation,
+            .section,
+            .news {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 899px) {
+            .main {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .navigation {
+                width: 20%;
+            }
+            .section {
+                width: 80%;
+            }
+            .news {
+                width: 100%;
+            }
+        }
+        /*Основные требования:
+Нужно добавить изображение на главной секции и сделать так, чтобы страница подстраивалась под ширину экрана.
+
+Основные требования:
+Добавьте изображение под хедером. При ширине экрана до 600px должна отображаться картинка small.png, а при 600px и больше - big.png
+Картинки должны растягиваться по ширине, но не больше своей оригинальной ширины. Дайте картинке тень 0px 4px 8px 0px rgba(0, 0, 0, 0.2)
+При ширине экрана до 600px все секции должны располагаться одна под другой в колонку и занимать всю ширину каждая
+При ширине экрана 600px и до 900px - навигация и основная секция должны быть в одной строке. При чем навигация должна занимать 20% ширины, а все остальное - основная секция. Новости должны располагаться под первыми двумя и растягиваться на всю ширину
+При ширине экрана 900px и больше - три секции должны располагаться в одну линию. Навигация должна занимать 20% ширины экрана, основная секция - 60%, новости - 20%*/
