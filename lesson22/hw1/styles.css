@@ -14,24 +14,20 @@ body {
 
 .header {
     height: 3em;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: #eee;
     display: flex;
     align-items: center;
 }
 
-.icon {
-    font-size: 2em;
-    cursor: pointer;
-}
-
 .button {
     padding: 0;
     border: none;
-    background-color: none;
-    margin: 0;
-    cursor: pointer;
+    background-color: transparent;
     outline: none;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 .main {
