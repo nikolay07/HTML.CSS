@@ -24,8 +24,8 @@
         line-height: $unit;
         cursor: pointer;
         &__item {
-            margin-left: $base-font-size;
-            margin-right: $base-font-size;
+            padding-left: $base-font-size;
+            padding-right: $base-font-size;
             list-style-type: none;
             &:hover {
                 background-color: $color-list-hover;
