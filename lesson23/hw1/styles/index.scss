@@ -1,0 +1,63 @@
+    @import 'variables.scss';
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: $base-font-size * 2;
+        color: $color-text;
+    }
+    
+    .header {
+        height: $unit;
+        background-color: $color-primary;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: $unit;
+        text-transform: uppercase;
+        line-height: $unit;
+        cursor: pointer;
+        &__item {
+            margin-left: $base-font-size;
+            margin-right: $base-font-size;
+            list-style-type: none;
+            &:hover {
+                background-color: $color-list-hover;
+            }
+            &_active {
+                color: yellow;
+                position: relative;
+            }
+        }
+    }
+    
+    .menu__item_active:hover>.submenu {
+        display: block;
+    }
+    
+    .submenu {
+        display: none;
+        position: absolute;
+        left: 10px;
+        min-width: 120px;
+        list-style-type: none;
+        background-color: $color-secondary;
+        box-shadow: $shadow;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        &__item {
+            padding-left: 8px;
+            padding-right: 8px;
+            cursor: pointer;
+        }
+        &__item:hover {
+            color: black;
+        }
+    }
