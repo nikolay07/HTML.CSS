@@ -1,0 +1,44 @@
+@import 'layout.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    @include for-extra-small {
+        flex-direction: column;
+    }
+    @include for-medium-up {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .first-block,
+        .second-block {
+            width: 50%;
+        }
+        .third-block {
+            width: 100%;
+        }
+    }
+    @include for-large-up {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .first-block,
+        .second-block,
+        .third-block {
+            width: 100%;
+        }
+    }
+}
+
+div {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
